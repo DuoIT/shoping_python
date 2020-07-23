@@ -1,3 +1,4 @@
+
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -32,8 +33,7 @@
 </head>
 <body style="background-color: #999999;">
 <form action="" method="post">
-	{{ f }}
-</form>
+<!--	{{ form.as_p }}-->
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="login100-more" style="background-image: url('images/bg-01.jpg');"></div>
@@ -87,7 +87,7 @@
 							</label>
 						</div>
 
-						
+
 					</div>
 
 					<div class="container-login100-form-btn">
@@ -107,6 +107,25 @@
 			</div>
 		</div>
 	</div>
+</form>
+
+<!-- <h2>Sign up</h2>-->
+<!--  <form method="post">-->
+<!--    {% csrf_token %}-->
+<!--    {% for field in form %}-->
+<!--      <p>-->
+<!--        {{ field.label_tag }}<br>-->
+<!--        {{ field }}-->
+<!--        {% if field.help_text %}-->
+<!--          <small style="color: grey">{{ field.help_text }}</small>-->
+<!--        {% endif %}-->
+<!--        {% for error in field.errors %}-->
+<!--          <p style="color: red">{{ error }}</p>-->
+<!--        {% endfor %}-->
+<!--      </p>-->
+<!--    {% endfor %}-->
+<!--    <button type="submit">Sign up</button>-->
+<!--  </form>-->
 	
 <!--===============================================================================================-->
 	<script src="{% static 'register/vendor/jquery/jquery-3.2.1.min.js' %}"></script>
